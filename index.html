@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Session and Cookie</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="mb-20">
+		<form action="http://127.0.0.1:5001/addUser" method="POST" id="adduser-form" name="myform">
+		  <input type="text" name="name" placeholder="Name" required class="form-ip">
+		  <input type="password" name="password" placeholder="Password" required class="form-ip">
+		  <input type="text" name="profession" placeholder="Profession" required class="form-ip">
+		  <input type="text" name="nameid" placeholder="User ID" required class="form-ip">
+		  <input type="submit" class="submit-btn" value="Add User">
+		</form>
+	</div>
+	<div class="mb-20">
+		<form action="/deleteUser" method="DELETE" id="deleteuser-form" name="myform">
+		  <input type="text" name="nameid" placeholder="User ID" required class="form-ip">
+		  <input type="submit" class="delete-btn" value="Delete User">
+		</form>
+	</div>
+	<div class="mb-20">
+		<form action="/getUser" method="POST" id="showuser-form" name="myform">
+		  <input type="text" name="nameid" placeholder="User ID" required class="form-ip">
+		  <input type="submit" class="show-btn" value="Show Detail">
+		</form>
+	</div>
+</body>
+</html>
